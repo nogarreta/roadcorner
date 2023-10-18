@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <Button
+        android:id="@+id/connectionButton"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Connection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/globeImageView" />
+
     <TextView
         android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
@@ -22,9 +33,9 @@
         android:id="@+id/globeImageView"
         android:layout_width="427dp"
         android:layout_height="273dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/globe"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -14,6 +14,7 @@ public class HomeActivity extends AppCompatActivity {
 
         Button createAccountButton = findViewById(R.id.createAccountButton);
         Button generalInfoButton = findViewById(R.id.generalInfoButton);
+        Button connectionButton = findViewById(R.id.connectionButton);
 
         createAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,6 +22,14 @@ public class HomeActivity extends AppCompatActivity {
                 Intent userProfileIntent = new Intent(HomeActivity.this, UserProfileActivity.class);
                 startActivity(userProfileIntent);
             }
+        });
+
+        connectionButton.setOnClickListener(new View.OnClickListener(){
+           @Override
+           public void onClick(View v){
+               Intent userConnectionIntent = new Intent(HomeActivity.this, ConnectionActivity.class);
+               startActivity(userConnectionIntent);
+           }
         });
 
         generalInfoButton.setOnClickListener(new View.OnClickListener() {

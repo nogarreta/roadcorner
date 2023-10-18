@@ -6,11 +6,14 @@ public class User {
     private String email;
     private int age;
 
-    public User(String firstName, String lastName, String email, int age) {
+    private String pwd;
+
+    public User(String firstName, String lastName, String email, int age, String pwd) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.age = age;
+        this.pwd = pwd;
     }
 
     public String getFirstName() {
@@ -44,4 +47,10 @@ public class User {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public void setPwd(String pwd) {this.pwd = pwd;}
+
+
+
+
 }

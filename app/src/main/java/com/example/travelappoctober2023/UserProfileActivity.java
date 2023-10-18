@@ -15,6 +15,8 @@ public class UserProfileActivity extends AppCompatActivity {
     private EditText lastNameEditText;
     private EditText emailEditText;
     private EditText ageEditText;
+    private EditText pwdEditText;
+    private EditText pwdcEditText;
     private Button saveProfileButton;
     private User user;
 
@@ -27,9 +29,11 @@ public class UserProfileActivity extends AppCompatActivity {
         lastNameEditText = findViewById(R.id.editTextLastName);
         emailEditText = findViewById(R.id.editTextEmail);
         ageEditText = findViewById(R.id.editTextAge);
+        pwdEditText = findViewById(R.id.editTextPwd);
+        pwdcEditText = findViewById(R.id.editTextPwdc);
         saveProfileButton = findViewById(R.id.buttonSaveProfile);
 
-        user = new User("", "", "", 0);
+        user = new User("", "", "", 0,"");
 
         saveProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,8 +42,10 @@ public class UserProfileActivity extends AppCompatActivity {
                 String lastName = lastNameEditText.getText().toString();
                 String email = emailEditText.getText().toString();
                 String ageStr = ageEditText.getText().toString();
+                String pwd = pwdEditText.getText().toString();
+                String pwdc = pwdcEditText.getText().toString();
 
-                if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || ageStr.isEmpty()) {
+                if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || ageStr.isEmpty() || pwdc!= pwd) {
                     Toast.makeText(UserProfileActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
                 } else {
                     int age = Integer.parseInt(ageStr);
@@ -48,11 +54,13 @@ public class UserProfileActivity extends AppCompatActivity {
                     user.setLastName(lastName);
                     user.setEmail(email);
                     user.setAge(age);
+                    user.setPwd(pwd);
 
                     String userFirstName = user.getFirstName();
                     String userLastName = user.getLastName();
                     String userEmail = user.getEmail();
                     int userAge = user.getAge();
+
 
                     Intent intent = new Intent(UserProfileActivity.this, DestinationSelectionActivity.class);
                     startActivity(intent);

@@ -7,19 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".UserProfileActivity">
-
-    <EditText
-        android:id="@+id/editTextFirstName"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:hint="Prénom" />
-
-    <EditText
-        android:id="@+id/editTextLastName"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:hint="Nom" />
+    tools:context=".ConnectionActivity">
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -28,24 +16,10 @@
         android:hint="E-mail" />
 
     <EditText
-        android:id="@+id/editTextAge"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:hint="Âge"
-        android:inputType="number"/>
-
-    <EditText
         android:id="@+id/editTextPwd"
         android:layout_width="match_parent"
         android:layout_height="58dp"
         android:hint="Mot de passe"
-        android:inputType="textPassword"/>
-
-    <EditText
-        android:id="@+id/editTextPwdc"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:hint="confirm pwd"
         android:inputType="textPassword"/>
 
     <Button
@@ -56,10 +30,10 @@
         android:text="Retour" />
 
     <Button
-        android:id="@+id/buttonSaveProfile"
+        android:id="@+id/buttonConnection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Enregistrer le profil" />
+        android:text="Connection" />
 
 </LinearLayout>
