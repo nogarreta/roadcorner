@@ -18,33 +18,33 @@
     <EditText
         android:id="@+id/editTextLastName"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="60dp"
         android:hint="Nom" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
         android:hint="E-mail" />
 
     <EditText
         android:id="@+id/editTextAge"
         android:layout_width="match_parent"
-        android:layout_height="63dp"
+        android:layout_height="60dp"
         android:hint="Âge"
         android:inputType="number"/>
 
     <EditText
         android:id="@+id/editTextPwd"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
+        android:layout_height="60dp"
         android:hint="Mot de passe"
         android:inputType="textPassword"/>
 
     <EditText
         android:id="@+id/editTextPwdc"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
+        android:layout_height="60dp"
         android:hint="confirm pwd"
         android:inputType="textPassword"/>
 

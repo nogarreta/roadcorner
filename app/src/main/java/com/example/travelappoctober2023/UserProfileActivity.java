@@ -45,8 +45,10 @@ public class UserProfileActivity extends AppCompatActivity {
                 String pwd = pwdEditText.getText().toString();
                 String pwdc = pwdcEditText.getText().toString();
 
-                if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || ageStr.isEmpty() || pwdc!= pwd) {
-                    Toast.makeText(UserProfileActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
+                if (!pwdc.equals(pwd)) {
+                    Toast.makeText(UserProfileActivity.this, "Veuillez-rentrer deux fois le même mot de passe", Toast.LENGTH_SHORT).show();
+                } else if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || ageStr.isEmpty() || pwd.isEmpty()) {
+                    Toast.makeText(UserProfileActivity.this, "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_SHORT).show();
                 } else {
                     int age = Integer.parseInt(ageStr);
 
