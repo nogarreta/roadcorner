@@ -1,9 +1,25 @@
 package com.example.travelappoctober2023.db_controllers;
 
-import org.bson.types.ObjectId;
+import com.example.travelappoctober2023.utils.DbSession;
 
-public class PostC {
-    private ObjectId post_id;
+import org.json.JSONObject;
+
+public class PostC extends DbSession {
 
 
+    public void insert() {
+
+    }
+
+    public void update() {
+
+    }
+
+    public void delete() {
+
+    }
+
+    public JSONObject select() {
+        return null;
+    }
 }

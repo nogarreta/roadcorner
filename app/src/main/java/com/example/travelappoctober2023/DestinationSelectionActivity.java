@@ -5,6 +5,8 @@ package com.example.travelappoctober2023;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
+//j'ai pas touché à ce fichier, je crois que la page correspondante ne fonctionne pas (Quentin)
+
 
 public class DestinationSelectionActivity extends AppCompatActivity {
 

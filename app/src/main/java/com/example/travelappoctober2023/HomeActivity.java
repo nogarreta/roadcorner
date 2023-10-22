@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
         createAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent userProfileIntent = new Intent(HomeActivity.this, UserProfileActivity.class);
+                Intent userProfileIntent = new Intent(HomeActivity.this, AccCreationActivity.class);
                 startActivity(userProfileIntent);
             }
         });

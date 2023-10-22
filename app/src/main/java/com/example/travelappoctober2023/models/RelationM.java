@@ -1,11 +1,6 @@
 package com.example.travelappoctober2023.models;
 
-import org.bson.types.ObjectId;
-
+//table name in db = usr_rl
 public class RelationM {
-    private ObjectId rel_id;
 
-    public RelationM(ObjectId relId) {
-        rel_id = relId;
-    }
 }

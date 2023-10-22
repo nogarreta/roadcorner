@@ -7,19 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".UserProfileActivity">
+    tools:context=".AccCreationActivity">
 
     <EditText
-        android:id="@+id/editTextFirstName"
+        android:id="@+id/editTextUserName"
         android:layout_width="match_parent"
         android:layout_height="63dp"
-        android:hint="Prénom" />
+        android:hint="Nom d'utilisateur" />
 
-    <EditText
-        android:id="@+id/editTextLastName"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Nom" />
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -28,11 +23,10 @@
         android:hint="E-mail" />
 
     <EditText
-        android:id="@+id/editTextAge"
+        android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Âge"
-        android:inputType="number"/>
+        android:hint="Phone number" />
 
     <EditText
         android:id="@+id/editTextPwd"
