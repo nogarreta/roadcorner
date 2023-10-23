@@ -1,5 +1,0 @@
-API COUNTRIES - GraphQL API Countries
-Website:
-https://studio.apollographql.com/public/countries/variant/current/home
-API: https://countries.trevorblades.com/graphql
-

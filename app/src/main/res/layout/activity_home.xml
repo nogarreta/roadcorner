@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context="com.travelappoctober2023.HomeActivity">
 
     <Button
         android:id="@+id/connectionButton"
@@ -51,6 +51,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/globeImageView"
         app:layout_constraintVertical_bias="0.215" />
+
+    <Button
+        android:id="@+id/discoverButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Informations générales"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/discoverButton" />
 
     <Button
         android:id="@+id/generalInfoButton"
