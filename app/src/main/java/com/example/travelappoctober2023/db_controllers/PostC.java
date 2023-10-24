@@ -1,6 +1,6 @@
-package com.travelappoctober2023.db_controllers;
+package com.example.travelappoctober2023.db_controllers;
 
-import com.travelappoctober2023.utils.DbSession;
+import com.example.travelappoctober2023.utils.DbSession;
 
 import org.json.JSONObject;
 

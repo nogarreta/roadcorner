@@ -13,10 +13,13 @@
         android:theme="@style/Theme.TravelAppOctober2023"
         tools:targetApi="31">
         <activity
-            android:name="com.travelappoctober2023.InfoActivity"
+            android:name=".DiscoverContinentsActivity"
             android:exported="false" />
         <activity
-            android:name="com.travelappoctober2023.HomeActivity"
+            android:name=".InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,15 +28,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.travelappoctober2023.DestinationSelectionActivity"
+            android:name=".DestinationSelectionActivity"
             android:exported="false" />
         <activity
-            android:name="com.travelappoctober2023.AccCreationActivity"
-            android:exported="true">
+            android:name=".AccCreationActivity"
+            android:exported="false">
         </activity>
         <activity
-            android:name="com.travelappoctober2023.ConnectionActivity"
-            android:exported="true">
+            android:name=".ConnectionActivity"
+            android:exported="false">
         </activity>
 
     </application>

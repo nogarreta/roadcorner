@@ -1,7 +1,7 @@
 query Countries($continent_code: ID!) {
     countries{
-        name
         code
+        name
         emojiU
     }
 }

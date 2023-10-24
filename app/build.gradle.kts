@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("com.apollographql.apollo3") version "3.8.2"
+    id("com.apollographql.apollo") version "2.5.14"
 }
 
 
@@ -38,7 +38,7 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("com.graphql-java:graphql-java:20.6")
-    implementation("com.apollographql.apollo3:apollo-runtime:3.8.2")
+    implementation("com.apollographql.apollo:apollo-runtime:2.5.14")
     implementation("org.postgresql:postgresql:9.3-1100-jdbc4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

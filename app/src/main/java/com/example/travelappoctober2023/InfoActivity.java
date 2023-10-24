@@ -1,12 +1,10 @@
-package com.travelappoctober2023;
+package com.example.travelappoctober2023;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.travelappoctober2023.R;
 
 //fait par noelle plus besoin de toucher
 public class InfoActivity extends AppCompatActivity {

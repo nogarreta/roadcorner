@@ -1,4 +1,4 @@
-package com.travelappoctober2023.utils;
+package com.example.travelappoctober2023.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

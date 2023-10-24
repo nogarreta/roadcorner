@@ -1,7 +1,7 @@
-package com.travelappoctober2023.models;
+package com.example.travelappoctober2023.models;
 
-import com.travelappoctober2023.utils.DbSession;
-import com.travelappoctober2023.utils.HashFunction;
+import com.example.travelappoctober2023.utils.DbSession;
+import com.example.travelappoctober2023.utils.HashFunction;
 
 import java.sql.Connection;
 

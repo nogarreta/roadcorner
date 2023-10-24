@@ -1,8 +1,7 @@
 query Country($countryCode: ID!) {
     country(code: $countryCode) {
       name
-      native
-      emoji
+      emojiU
       currency
       states {
         code
