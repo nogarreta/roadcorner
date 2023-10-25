@@ -4,17 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+import com.apollographql.apollo.ApolloClient;
+import com.example.travelappoctober2023.graphql.ContinentQuery;
+import com.example.travelappoctober2023.utils.RequestCenter;
 
 public class HomeActivity extends AppCompatActivity {
+    ApolloClient apolloClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,44 +50,12 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 test();
-                Intent infoIntent = new Intent(HomeActivity.this, InfoActivity.class);
-                startActivity(infoIntent);
+                //RequestCenter.sendDestQuery("AF");
+
             }
         });
     }
-    public void test(){
-        String graphqlEndpoint = "https://countries.trevorblades.com/graphql";
-        OkHttpClient client = new OkHttpClient();
-
-        String graphqlQuery = "query Query {\n" +
-                "  country(code: \"BR\") {\n" +
-                "    name\n" +
-                "    native\n" +
-                "    capital\n" +
-                "    emoji\n" +
-                "    currency\n" +
-                "    languages {\n" +
-                "      code\n" +
-                "      name\n" +
-                "    }\n" +
-                "  }\n" +
-                "}";
-
-        MediaType mediaType = MediaType.parse("application/json");
-        RequestBody body = RequestBody.create(mediaType, "{\"query\":\"" + graphqlQuery.replace("\"", "\\\"") + "\"}");
-
-        Request request = new Request.Builder()
-                .url(graphqlEndpoint)
-                .post(body)
-                .addHeader("Content-Type", "application/json")
-                .build();
-
-        try (Response response = client.newCall(request).execute()) {
-            String responseData = response.body().string();
-            System.out.println("Response: " + responseData);
-            Toast.makeText(HomeActivity.this, responseData, Toast.LENGTH_SHORT).show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public ContinentQuery.Continent test() {
+        return RequestCenter.continentQuery("AF");
     }
 }
